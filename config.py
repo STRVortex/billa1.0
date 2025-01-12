@@ -7,22 +7,22 @@ from pyrogram import filters
 load_dotenv()
 
 # Get this value from my.telegram.org/apps
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = "25892174"
+API_HASH = "f57b0158a1b29c2c6032157a227aea4e"
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = "7127577382:AAHjGrAwFVH364gg9KUyM-clEx1vPoW7JaA"
 
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = "mongodb+srv://fidixi3663:w7rvlxmDd5lsX9ix@cluster0.0k1an50.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
-DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 600))
+DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 6000))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID", None))
+LOGGER_ID = -1002064111110
 
 # Get this value from @FallenxBot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 1265397721))
+OWNER_ID = 5960968099
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -32,27 +32,24 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/HeartKing88/QUEEN",
+    "https://github.com/koreansmu/billamusic2.0",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
-GIT_TOKEN = getenv(
-    "GIT_TOKEN", None
-)  # Fill this variable if your upstream repository is private
+GIT_TOKEN = "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"  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Botz_x_hub")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/alice_x_support")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/STORM_TECHH")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/STORM_CORE")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
 
-
 # Get this credentials from https://developer.spotify.com/dashboard
-SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", "95f4f5c6df5744698035a0948e801ad9")
-SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", "4b03167b38c943c3857333b3f5ea95ea")
+SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", "2d3fd5ccdd3d43dda6f17864d8eb7281")
+SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", "48d311d8910a4531ae81205e1f754d27")
 
 
 # Maximum limit for fetching playlist's track from youtube, spotify, apple links.
-PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", 25))
+PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", 70))
 
 
 # Telegram audio and video file size limit (in bytes)
@@ -62,7 +59,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
 
 
 # Get your pyrogram v2 session from @StringFatherBot on Telegram
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = "BQGLFU4APj5JxF0yUMUv0W_t0p-2g8ntQcqN9q0rHFgbMOUKIMdxk6I8Q9HodyMqAQ0y5VUU3m7PvndnxN1B0ZQU2g9emV7gRn2MWqCvfztXVS7wEGUIM9buAO2GCE2k9hR6sKHTtCNzbZ56-xqBIQpqI0coZx6v_GMGfdi-0yH-vLRC-7_fwhjaGwZwoC1LPPpoFLx1ZyzokG7Cowd6x0AsdWh1e7ayyS1nSR01Iz0e3mS7hCrw8lLzE6pHGwyuK4iz2RECM34e-TqqWksaePWjZsH8t7VBk_pIujC3UgcwpatE0QHdNqJh2_1IJrYkYQWlcs2IlMMJdD1BNuX7ecf4i7nZywAAAAHNzl_uAA"
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -78,16 +75,16 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://envs.sh/YvS.jpg"
+    "START_IMG_URL", "https://graph.org/file/0799b110240ef68c1519b-46d4e55cf4b3b1b908.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://telegra.ph/file/531090c47c12e983bf731.jpg"
+    "PING_IMG_URL", "https://graph.org/file/7863333287f805047b707-1db27700cfe5bb71d3.jpg"
 )
-PLAYLIST_IMG_URL = "https://te.legra.ph/file/4ec5ae4381dffb039b4ef.jpg"
-STATS_IMG_URL = "https://files.catbox.moe/yc5ssr.jpg"
-TELEGRAM_AUDIO_URL = "https://te.legra.ph/file/6298d377ad3eb46711644.jpg"
-TELEGRAM_VIDEO_URL = "https://te.legra.ph/file/6298d377ad3eb46711644.jpg"
-STREAM_IMG_URL = "https://te.legra.ph/file/bd995b032b6bd263e2cc9.jpg"
+PLAYLIST_IMG_URL = "https://graph.org/file/850b97892571970594dc0-b005845a1d9c0f175a.jpg"
+STATS_IMG_URL = "https://graph.org/file/999be18d2ae22977571f3-f93222d713f41b0146.jpg"
+TELEGRAM_AUDIO_URL = "https://graph.org/file/002dc32a43f463fbfed8e-e04d6df2456227531b.jpg"
+TELEGRAM_VIDEO_URL = "https://graph.org/file/f4e010d4a88b63d1f6258-dac28211d4296ff886.jpg"
+STREAM_IMG_URL = "https://graph.org/file/d6d0d0b2328e9916de696-b5fb5dd3091cbab13e.jpg"
 SOUNCLOUD_IMG_URL = "https://te.legra.ph/file/bb0ff85f2dd44070ea519.jpg"
 YOUTUBE_IMG_URL = "https://te.legra.ph/file/6298d377ad3eb46711644.jpg"
 SPOTIFY_ARTIST_IMG_URL = "https://te.legra.ph/file/37d163a2f75e0d3b403d6.jpg"
