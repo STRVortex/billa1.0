@@ -36,4 +36,7 @@ for filename in os.listdir(r"./strings/langs/"):
 
 def get_string(lang: str):
     """Retrieve the language dictionary. Fallback to English if the language is missing."""
-    return languages.get(lang, languages["en"])
+    lang_dict = languages.get(lang, languages["en"])
+    
+    # Ensure all values are properly quoted when accessed
+    return {key: f'"{value}"' if isinstance(value, str) else value for key, value in lang_dict.items()}
