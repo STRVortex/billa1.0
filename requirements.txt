@@ -1,6 +1,7 @@
 aiofiles
 aiohttp
 asyncio
+uvloop
 beautifulsoup4
 dnspython
 ffmpeg-python
