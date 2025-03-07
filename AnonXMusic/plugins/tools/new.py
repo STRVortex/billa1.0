@@ -1,7 +1,7 @@
 import asyncio
 from pyrogram import Client, filters
 from pyrogram.types import Message
-from Opus.utils.decorators import AdminActual
+from AnonXMusic.utils.decorators import AdminActual
 from config import BANNED_USERS, adminlist
 from AnonXMusic import app
 
