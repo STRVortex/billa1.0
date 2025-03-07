@@ -21,7 +21,7 @@ async def set_delay(client: Client, message: Message):
     except (IndexError, ValueError):
         await message.reply("Usage: /setdelay <time_in_minutes>")
 
-@app.on_message(filters.command("auth") & filters.group & ~BANNED_USERS)
+@app.on_message(filters.command("mauth") & filters.group & ~BANNED_USERS)
 @AdminActual
 async def authorize_user(client: Client, message: Message):
     if not message.reply_to_message:
@@ -49,7 +49,7 @@ async def authorize_user(client: Client, message: Message):
     else:
         return await message.reply(f"{user.first_name} is already authorized.")
 
-@app.on_message(filters.command("unauth") & filters.group & ~BANNED_USERS)
+@app.on_message(filters.command("munauth") & filters.group & ~BANNED_USERS)
 @AdminActual
 async def unauthorize_user(client: Client, message: Message):
     if not message.reply_to_message:
@@ -68,7 +68,7 @@ async def unauthorize_user(client: Client, message: Message):
     else:
         return await message.reply(f"{user.first_name} is not authorized.")
 
-@app.on_message(filters.command("authuserlist") & filters.group & ~BANNED_USERS)
+@app.on_message(filters.command("mauthuserlist") & filters.group & ~BANNED_USERS)
 @AdminActual
 async def list_authorized_users(client: Client, message: Message):
     _check = await get_authuser_names(message.chat.id)
